@@ -1,0 +1,33 @@
+.content{
+  position: relative;
+  &__body{
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__header{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0 20px;
+  }
+  &__title{
+    @include font-size(200px);
+    font-weight: bold;
+  }
+  &__subtitle{
+    @include font-size(78px);
+    font-weight: bold;
+    @include line-height(90px);
+  }
+  &__article{
+    background-color: rgba(255,255,255,.5);
+    padding: 50px;
+    @include font-size(16px);
+    @include line-height(24px);
+    p{
+      margin-bottom: 20px;
+      z-index:3;
+      position: relative;
+    }
+  }
+}

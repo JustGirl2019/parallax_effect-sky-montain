@@ -1,0 +1,4 @@
+.page{
+  @include abs-position(0,auto,auto,0);
+  @include box();
+}
